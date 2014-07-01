@@ -1,0 +1,1 @@
+var url = "http://loancentro.com/1";

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="description" content="Loan Centro provides working capital for small business owners with no collateral or fixed payments. Fast, flexible unsecured financing.">
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+<link href="files/header_new.css" rel="stylesheet" type="text/css">
+<link href="files/general.css" rel="stylesheet" type="text/css">
+<link href="files/index.css" rel="stylesheet" type="text/css">
+<link href="files/steps_box.css" rel="stylesheet" type="text/css">
+<link href="files/footer.css" rel="stylesheet" type="text/css">
+<link href="favicon.ico" rel="icon">
+<script>
+</script>
+
+<title>Loan Centro - Find Business Loans Fast</title>
+</head>
+
+<body>
+    <div class="app">
+        <link href="files/css" rel="stylesheet" type="text/css">
+
+        <header>
+            <div class="wrapper">        
+                <a href="index.html" class="logo">
+                    <img src="images/logo.gif">
+                </a>
+                <!--
+                <div class="right_header" style="max-width: 293px;font-weight: bold;">
+                    <div style="margin-bottom: 7px;">Are you wondering if your business is eligble for a loan?</div>
+                    <div>Use this app to find out without running a credit check!</div>            
+                </div>
+                -->
+            </div>
+            <ul class="blue_line">
+                <li id="li4"></li>     
+            </ul>
+        </header>    
+        <div data-role="page" id="page1" class="upper" style="height: 510px;">
+            <div class="wrapper">
+                <div class="left" style="margin-bottom: 50px;margin-top: 29px;">
+                    <div style="text-align: center;">
+                        <a href="javascript:login();return false;"><img src="images/fb-login.jpg"></a><br /><br />
+                        <a href="javascript:login();return false;"><img src="images/linkedin.jpg"></a>
+                        <a href="#page2">To page 2<\a>
+                    </div>
+                </div> <!-- END -- left -->
+                <div class="right" style="display:none">
+                    <div class="right">
+                        <h3>LoanCentro.com, provides financing alternatives to small businesses in almost any industry.</h3>
+                        <p>Established businesses with demonstrated revenue may qualify for funding in 24 hours or less.</p>
+                    </div><!-- END -- right -->
+                
+                
+                </div><!-- END -- wrapper -->
+            </div><!-- END -- upper -->
+        </div>
+        <div data-role="page" id="page2">
+            test
+        </div>
+    </div>
+
+<div id="fb-root"></div>
+
+
+<script src="init.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script src="files/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script> 
+<script type="text/javascript" src="js/facebookConnectPlugin.js"></script>
+<script>
+var login = function () {
+if (!window.cordova) {
+    facebookConnectPlugin.browserInit("1452628524988088");
+}
+facebookConnectPlugin.login( ['email', 'user_location', 'user_about_me', 'user_birthday', 'user_work_history'], 
+function (response) {
+    //alert(JSON.stringify(response)) 
+    window.location = "form.html";
+},
+function (response) { 
+    //alert(JSON.stringify(response)) 
+    window.location = "form.html";
+});
+}
+$(document).ready(function(e){
+    
+    var url = window.location.href;
+    var value = url.substring(url.lastIndexOf('/') + 1);
+    initAnchors();
+    var id,
+        menu_pages = {
+            'merchant_cash_advances.html': '#li1',
+            'restaurant.html': '#li2',
+            'bad_credit.html': '#li3',
+            'unsecured_business_financing.html': '#li4' 
+        };
+    if(id = menu_pages[value]){
+        $('header ul li').removeClass('selected');
+        $(id).addClass('selected');
+    }
+});
+
+function initAnchors(){
+    var href,
+        ele = "";
+    $( document ).on( "click", "a", function( e ) {
+        href = $( this ).attr( "href" );
+        var hash = $.mobile.path.parseUrl( href );
+        if( typeof href !== "undefined" && hash !== "" && href !== href.replace( hash,"" ) && hash.search( "/" ) !== -1 ){
+            //remove the hash from the link to allow normal loading of the page.
+            var newHref = href.replace( hash,"" );
+            $( this ).attr( "href", newHref );
+        }
+        ele = $( this );
+    });
+
+}
+
+</script>
+
+</body></html>

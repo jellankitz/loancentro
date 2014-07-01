@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.loancentro.home" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0" android-versionCode="6">
+    <name>LoanCentro</name>
+    <description>
+        Calculate if you are qualified for a loan
+    </description>
+    <author email="chuya000@gmail.com" href="http://chuya00.com">
+        Jellan Quitos
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.5.1">
+	    <param name="APP_ID" value="1452628524988088" />
+	    <param name="APP_NAME" value="Loan Centro" />
+	</gap:plugin>
+</widget>

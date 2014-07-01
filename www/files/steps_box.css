@@ -1,0 +1,267 @@
+@charset "utf-8";
+/* CSS Document */
+
+.steps{
+	width: 100%;
+	min-height: 300px;
+	text-align:center;
+	margin-top: 20px;
+}
+
+.steps.border{
+	border: 8px solid #ffffff;
+	position: relative;
+	margin-left: -8px;
+	background-image: url(../images/bg_steps.png);
+	background-repeat: repeat-x;
+}
+
+.steps.border h1{
+	font-size: 20px;
+	text-align: left;
+	padding: 0 0 7px 60px;
+	font-weight: 400;
+	font-style: italic;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	line-height: 40px;
+	vertical-align: middle;
+	background-color:  #FFF;
+	color: #428ccb;
+	background-image: url(../images/clock.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+	margin-bottom: 10px;
+}
+.steps.border input, .steps.border select{
+	margin-top: 20px;
+	color: #FFFFFF;
+	background-color: #1861a0;
+	border: 1px solid #ffffff;
+	padding: 3px 10px 5px 10px;
+	font-size: 18px;
+	font-family: segoeuil, Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-weight: 100;
+	width: 230px;
+	border-radius: 0;
+}
+.steps.border option{
+	background-color: #1861a0;
+}
+
+.push_down{
+	display: block;
+	width: 100%;
+	height: 10px;
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+
+select{
+	padding:3px;
+    margin: 0;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;	
+	width: 250px !important;
+}
+
+label {position:relative}
+label:after {
+    content: url(../images/select_arrow.png);
+    color:#FFB85D;    
+    right: 15px;
+	top: -1px;
+    padding: 0;
+    position:absolute;
+    pointer-events:none;
+}
+label:before {
+    content:'';
+    right:6px; 
+	top: -4px;
+    width: 30px; 
+	height: 28px;
+    background:#1861A0;
+    position: absolute;
+    pointer-events: none;
+    display: block;
+}
+
+.botton_line{
+	width: 250px;
+	margin: 30px auto;
+}
+
+.botton_line .left{
+	float:left;
+	max-width: 100px;
+	margin: 0;
+	padding: 0;!important
+}
+
+.botton_line .left ul{
+	margin: 3px;
+	padding: 0;
+}
+.botton_line .left ul li{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-weight: 300;
+	color: #95c2e8;
+	text-align: center;
+	width: 24px;
+	height: 24px;
+	display:inline-block;
+	background-color: transparent;
+	border: 1px solid #95c2e8;
+	border-radius: 50%;
+}
+.botton_line .left ul li.done{
+	background-color: #ffffff !important;
+	border: 1px solid #ffffff;
+	color: #1861a0;
+	font-weight: 600;
+}
+
+.botton_line .right{
+	text-align: right;
+	float: right;
+	margin: 0;
+	padding:0 !important;
+	width: 125px;
+}
+
+.botton_line .right a{
+	color: #ffffff;
+	background-color: #0BA516;
+	border: 3px solid #ffffff;
+	padding: 5px 15px;
+	font-weight: 600;
+	text-decoration: none;
+	box-shadow: 0 0 3px #777777;
+}
+.botton_line .right a:hover{
+	background-color: #0A8913;
+}
+#step3, #step2, #step4{
+	display: none;	
+}
+
+
+@media only screen and (min-width: 331px){
+.steps.border h1{
+	font-size: 22px;
+}
+
+.steps.border input{
+	width: 260px;
+}
+
+select{	
+	width: 280px !important;
+}
+.botton_line{
+	width: 280px;
+	margin: 30px auto;
+}
+}
+/* --END-- 331px */
+
+@media only screen and (min-width: 501px){
+.steps.border h1{
+	font-size: 30px;
+}
+
+}
+/* --END-- 461px */
+
+@media only screen and (min-width: 731px){
+.steps{
+	/* width: 300px; */
+	width: 478px;
+}
+
+.steps.border h1{
+	font-size: 22px;
+}
+
+.steps.border input{
+	width: 260px;
+}
+
+select{	
+	width: 280px !important;
+}
+.botton_line{
+	width: 280px;
+	margin: 30px auto;
+	padding: 0;
+}
+.botton_line .left {
+    margin: -6px;
+}
+}
+/* --END-- 731px */
+
+
+
+@media only screen and (min-width: 831px){
+.steps{
+	width: 350px;
+}
+
+.steps.border h1{
+	font-size: 28px;
+}
+
+.steps.border input{
+	width: 300px;
+}
+
+select{	
+	width: 320px !important;
+}
+.botton_line{
+	width: 320px;
+	margin: 30px auto;
+}
+}
+/* --END-- 831px */
+
+
+
+@media only screen and (min-width: 961px){
+.steps{
+	width: 400px;
+}
+
+.steps.border h1{
+	font-size: 30px;
+}
+
+}
+/* --END-- 961px */
+
+
+
+@media only screen and (min-width: 1081px){
+.steps{
+	width: 450px;
+}
+}
+/* --END-- 1081px */
+
+
+
+@media only screen and (min-width: 1201px){
+.steps{
+	width: 500px;
+}
+}
+/* --END-- 1201px */

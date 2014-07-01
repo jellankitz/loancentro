@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+
+footer {
+	margin: 0;
+}
+
+footer .blue_l{
+	width: 100%;
+	height: 10px;
+	margin: 0;
+	padding: 0;
+	background-color: #428ccb;
+}
+
+footer .menu{
+	width: 100%;
+	height: 188px;
+	background-image: url(../images/footer_bg.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #85ADC0;
+}
+
+footer .dark_line{
+	position: relative;
+	text-align: center;
+	background: url(../images/menu_bg.png) repeat;
+}
+footer .dark_line .wrapper img{
+	position: absolute;
+	left: 5px;
+	top: -75px;
+}
+
+footer .dark_line ul{
+	margin: 0;
+	padding: 0;
+}
+
+footer .dark_line ul li{
+	display:inline-block;
+	padding: 5px;
+}
+
+footer .dark_line ul li a{
+	color:#FFFFFF; 
+	font-size: 14px;
+	text-decoration: none;
+}
+footer .dark_line ul li a:hover{
+	color: #0AA415; 
+}
+
+
+.gray_line{
+	padding: 10px 0 40px 0;
+	text-align: center;
+	background-color: #E2E2E2;
+}
+.gray_line p{
+	padding: 0 15px 0 15px;
+}
+.gray_line a{
+	color: #333333;
+	font-size: 16px;
+}
+
+.push_down{
+	width: 100%;
+	height: 10px;
+}
+
+
+@media only screen and (min-width: 801px){
+.push_down{
+	width: 100%;
+	height: 0;
+}
+footer .dark_line ul li{
+	padding: 10px 7px 10px 7px;
+}
+
+}
+
+
+@media only screen and (min-width: 1385px){
+	.gray_line{
+	padding: 10px 0 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+

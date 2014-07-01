@@ -1,0 +1,280 @@
+@charset "utf-8";
+/* CSS Document */
+
+header {
+	padding: 0;
+}
+
+header nav {
+	width: 480px;
+	background-color: #EFEFEF;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	padding: 3px 20px 8px;
+	margin: 0px auto;
+	text-align: center;
+}
+header nav a {
+	text-decoration: none;
+	color: #616161;
+	font-size: 14px;
+	padding: 0 5px;
+}
+header nav a:hover{
+	color: #4C99DA;
+}
+
+header a {
+	text-decoration: none;
+}
+header .logo{
+	display: inline-block;
+	margin-left: 20px;
+}
+header .logo img {
+	margin-top: 20px;
+}
+header .logo p {
+	font-size: 15px;
+	font-weight: 600;
+	color: #929292;
+}
+
+header .wrapper a.call_free {
+	margin: 0 auto;
+	background-image: url(../images/call_free.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 40%;
+	height: 61px;
+	display: inline-block;
+	position: absolute;
+	top: 80px;
+	left: 30%;
+	text-decoration: none;
+}
+
+header .right_header{
+	float: right;
+	margin-top: 25px;
+	margin-right: 20px;
+}
+header .right_header p{
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 600;
+	color: #929292;
+	text-align: center;
+}
+.p_blue {
+	font-size: 22px;
+	color: #2e79b9;
+	display: block;
+	font-weight: 600;
+	margin: -10px 0 0;
+	padding: 0;
+}
+header .right_header .bg_aplly {
+	box-shadow: inset 0 0 6px 2px #dddddd;
+	padding: 10px;
+}
+header .right_header .bg_aplly button {
+	width: 100%;
+	background: rgb(12,166,23); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(12,166,23,1) 1%, rgba(0,134,9,1) 50%, rgba(12,166,23,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(1%,rgba(12,166,23,1)), color-stop(50%,rgba(0,134,9,1)), color-stop(100%,rgba(12,166,23,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(12,166,23,1) 1%,rgba(0,134,9,1) 50%,rgba(12,166,23,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(12,166,23,1) 1%,rgba(0,134,9,1) 50%,rgba(12,166,23,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(12,166,23,1) 1%,rgba(0,134,9,1) 50%,rgba(12,166,23,1) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(12,166,23,1) 1%,rgba(0,134,9,1) 50%,rgba(12,166,23,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0ca617', endColorstr='#0ca617',GradientType=1 ); /* IE6-9 */
+	border: 0;
+	box-shadow: 1px 1px 4px #aaaaaa;
+	padding: 10px;
+	font-size: 27px;
+	color: #FFF;
+	cursor: pointer;
+	
+}
+header .right_header .bg_aplly button:hover {
+	background: #008709;
+}
+header .right_header .bg_aplly button:active {
+	box-shadow: none;
+}
+
+ul.blue_line{
+	width: 100%;
+	margin: 20px auto 0;
+	text-align: center;
+	padding: 0;
+	background: #1861a0;
+}
+ul.blue_line li{
+	display: inline-block;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-bottom: none;
+	border-right: 1px solid #2E79B9;
+	margin: 0 -4px 0 0;
+}
+ul.blue_line li:last-child{
+	border-right: none
+}
+ul.blue_line li:hover{
+	background-color: #4C99DA;
+}
+ul.blue_line li a{
+	text-decoration: none;
+	color: #ffffff
+}
+
+.selected{
+	background-color: #4C99DA;
+}
+
+@media only screen and (max-width: 980px){
+	header .wrapper a.call_free {
+		display: block;
+		position: relative;
+		top: auto;
+		left: auto;
+		width: 100%;
+		margin-top: 15px;
+	}
+}
+@media only screen and (max-width: 730px){
+	ul.blue_line li{
+		display: block;
+		margin: 0;
+		padding: 5px 10px;
+		font-size: 15px;
+		cursor: pointer;
+		border-bottom: 1px solid #2E79B9;
+}
+}
+@media only screen and (max-width: 680px){
+	header .logo img{
+		width: 110px;
+		margin-top: 30px;
+	}
+	header .logo .p_blue{
+		font-size: 15px;
+	}
+	header .logo p {
+		font-size: 14px;
+	}
+	header .right_header{
+		width: 240px;
+	}
+	header .right_header p{
+		font-size: 14px;
+	}
+	header .right_header .bg_aplly button{
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 560px){	
+	header nav {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 570px){
+	header .logo{
+		width: 100%;
+		display: block;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+	header .logo img {
+		width: 100px;
+		margin-top: 20px;
+	}
+	header .right_header{
+		float: none;
+		width: 90%;
+		margin: 10px 5% 0 5%;
+	}
+	header .right_header p{
+		font-size: 16px;
+	}
+	header .right_header p{
+		color: #008709;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	header .logo img{
+		/*width: 100px;*/
+		width: 77%;
+	}
+	.p_blue {
+		font-size: 17px;
+	}
+	header .right_header .bg_aplly {
+		padding: 5px;
+		margin-top: 5px;
+	}
+	header .right_header .bg_aplly button {
+		font-size: 22px;
+	}
+}
+
+
+
+/*---------Start header apply----------*/
+
+.apply_page .right_header .call_free_apply {
+	margin: 10px auto 0;
+	background-image: url(../images/call_free_apply.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 200px;
+	height: 88px;
+	display: inline-block;
+}
+@media only screen and (max-width: 680px){
+	header .apply_page .right_header{
+		width: 200px;	
+	}
+	.apply_page .right_header .call_free_apply {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 680px){
+	.apply_page .right_header .call_free_apply {
+		margin: 25px auto 0;
+	}
+	header .apply_page .logo {
+		display: inline-block;
+		margin: 0px 0px 10px 20px;
+		padding: 0px;
+	}
+	header .apply_page .right_header {
+		float: right;
+		width: 200px;
+		margin: 0 20px 0 0;
+	}
+}
+@media only screen and (max-width: 570px){
+	.apply_page .right_header .call_free_apply {
+		margin: 25px auto 0;
+	}
+	header .apply_page .logo {
+		display: block;
+		margin: 0;
+	}
+	header .apply_page .right_header {
+		float: none;
+		width: 100%;
+		margin: 0;
+	}
+	.apply_page .right_header .call_free_apply {
+		margin: 5px auto -5px;
+		background-image: url(../images/call_free.png);
+		height: 55px;
+	}
+}

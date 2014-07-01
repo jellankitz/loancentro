@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Playfair Display SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Playfair Display SC'), local('PlayfairDisplaySC-Regular'), url(http://themes.googleusercontent.com/static/fonts/playfairdisplaysc/v2/G0-tvBxd4eQRdwFKB8dRkf5twPfG3l5Gc3nk2Vyncrg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Playfair Display SC';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Playfair Display SC Bold'), local('PlayfairDisplaySC-Bold'), url(http://themes.googleusercontent.com/static/fonts/playfairdisplaysc/v2/5ggqGkvWJU_TtW2W8cEubMP2KmjfUHYbcL2S5kCcZ9E.woff) format('woff');
+}
+@font-face {
+  font-family: 'Playfair Display SC';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Playfair Display SC Black'), local('PlayfairDisplaySC-Black'), url(http://themes.googleusercontent.com/static/fonts/playfairdisplaysc/v2/5ggqGkvWJU_TtW2W8cEubChtWc5S1SmZsIE3Zm-pntA.woff) format('woff');
+}
